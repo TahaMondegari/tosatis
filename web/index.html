@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fa" dir="rtl" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <meta name="description" content="ترب‌یار — دستیار هوشمند خرید حضوری از فروشگاه‌ها و پاساژهای تهران" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="icon" type="image/png" href="/brand/favicon-64.png" />
+    <link rel="apple-touch-icon" href="/brand/app-icon-192.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <title>ترب‌یار · دستیار خرید حضوری</title>
+    <script>
+      try {
+        var s = JSON.parse(localStorage.getItem('torobyar') || '{}').state || {};
+        var t = s.theme || 'dark';
+        if (t === 'system') t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        document.documentElement.dataset.theme = t;
+        if (s.textSize === 'large') document.documentElement.dataset.text = 'large';
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

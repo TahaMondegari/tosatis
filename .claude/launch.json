@@ -1,0 +1,6 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "torob-yar", "runtimeExecutable": "node", "runtimeArgs": ["--env-file-if-exists=.env", "server/index.ts"], "port": 3000 }
+  ]
+}

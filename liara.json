@@ -1,0 +1,6 @@
+{
+  "platform": "docker",
+  "app": "torob-yar",
+  "port": 3000,
+  "healthCheck": { "command": "wget -qO- http://127.0.0.1:3000/api/health", "interval": 30, "timeout": 5, "retries": 3, "startPeriod": 20 }
+}

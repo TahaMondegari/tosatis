@@ -1,0 +1,9 @@
+node_modules
+web/node_modules
+web/dist
+data
+_input
+.claude
+*.log
+.env
+scripts/models.ts
