@@ -1,0 +1,8 @@
+node_modules
+web/node_modules
+web/dist
+_input
+.env
+*.log
+data/calls.json
+data/torob.db

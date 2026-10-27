@@ -1,0 +1,9 @@
+{
+  "app": "tosatis",
+  "port": 8000,
+  "team-id": "6ad8a590615e2e0c8fe51773",
+  "build": {
+    "location": "germany"
+  },
+  "disks": []
+}

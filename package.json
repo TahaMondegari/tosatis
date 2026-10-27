@@ -1,0 +1,26 @@
+{
+  "name": "torob-yar",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "build:db": "node scripts/build-db.ts",
+    "dev:server": "node --env-file-if-exists=.env --watch server/index.ts",
+    "dev:web": "npm --prefix web run dev",
+    "build": "npm --prefix web run build",
+    "start": "node --env-file-if-exists=.env server/index.ts",
+    "smoke": "node scripts/smoke.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "^2.1.5",
+    "csv-parse": "^7.0.3",
+    "hono": "^4.13.13"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2"
+  }
+}
